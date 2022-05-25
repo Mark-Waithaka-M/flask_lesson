@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% block head %}
+
+{%endblock%}
+
+{% block body %}
+<form action="login.html" method="post">
+    <div class = "container">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="name">
+
+        <label for="psw">Password</label>
+        <input type="password" name="password", placeholder="password">
+
+        <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+    </div>
+</form>
+{%endblock%}

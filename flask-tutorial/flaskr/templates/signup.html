@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+
+{%block head%}
+<title> SignUp page </title>
+{%endblock%}
+
+{%block body%}
+<form action="/signUp" method="post" </form>
+    <div class="container">
+    <h3>SignUp page</h3>
+    <label for="name">Name</label>
+    <input type="text" name="name" placeholder="Enter your name" required />
+
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="Enter your email" required />
+
+    <label for="password">Password</label>
+    <input type="password" name="psw" placeholder="Enter your password" required />
+
+    <label for="confirm-password">Confirm Password</label>
+    <input type="password" name="psw-repeat" placeholder="confirm your password" required />
+
+    <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+    </form>
+{%endblock%}
